@@ -19,9 +19,9 @@ app.post('/register', (req, res) => {
 
 */
 
-app.get('/status',(req, res) => {
+app.post('/register',(req, res) => {
     res.send({
-        message: 'cao'
+        message: `cao ${req.body.email}! Registrovani korisnice`
     })
 })
 app.listen(process.env.PORT || 8083)
