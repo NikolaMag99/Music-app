@@ -7,8 +7,13 @@
     <br/>
     <label for="defaultFormLoginPasswordEx" class="grey-text">Your password</label>
     <input type="password" id="defaultFormLoginPasswordEx" class="form-control" v-model = "password"/>
-    <div class="text-center mt-4">
-      <button class="btn btn-indigo" type="submit" @click="register">Sign up</button>
+    <div class="text-center mt-4" >
+      <div class="error" v-html="error"/>
+      <v-btn
+        class ="cyan"
+        @click = "register">
+        Registar
+      </v-btn>
     </div>
   </form>
 <!--

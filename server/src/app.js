@@ -16,6 +16,7 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 // da ne moze ni jedan klijent da koristi server
 app.use(cors())
+app.use(express.json())
 
 /*
 app.post('/register', (req, res) => {

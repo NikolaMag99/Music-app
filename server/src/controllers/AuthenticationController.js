@@ -16,24 +16,25 @@ function jwtSignUser (user) {
 }
 
 module.exports = {
-  async register (req, res) {
-     User.create(req.body).then((resposne) =>{
-         res.send(resposne)
-     } ).catch((error) => {
-         res.send(error)
-     })
-
-      /*
+  async register (req, res,next) {
+     // User.create(req.body).then((response) =>{
+     //     res.send(response)
+     // } ).catch((error) => {
+     //     res.send(error)
+     // })
         try {
+            // const user = await User.create(req.body)
+            //
+            // const userJson = user.toJSON()
+            // res.send({
+            //     user: userJson,
+            //     token: jwtSignUser(userJson)
+            // })
             const user = await User.create(req.body)
-            res.send(user.JSON())
-        } catch (err) {
-            res.status(400).send({
-                error: 'Vec postoji acc'
-            })
+            res.json(user)
+        } catch (error) {
+            next(error);
         }
-
-       */
     },
     async login (req, res) {
         try {
@@ -48,8 +49,7 @@ module.exports = {
                     error: 'Los unos'
                 })
             }
-
-            const isPassValid = password === user.password
+            const isPassValid = await user.comparePassword(password)
             if (!isPassValid) {
                 return  res.status(403).send({
                     error: 'Los unos'

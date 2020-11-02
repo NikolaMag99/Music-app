@@ -8,39 +8,45 @@
     <label for="defaultFormLoginPasswordEx" class="grey-text">Your password</label>
     <input type="password" id="defaultFormLoginPasswordEx" class="form-control" v-model = "password"/>
     <div class="text-center mt-4">
-      <button class="error btn btn-indigo" v-html="error" type="submit"  @click="login">Login</button>
-    </div>
-  </form>
-<!--
-<v-layout column>
-  <v-flex xs6 offset-xs3>
-    <div class="white elevation-2">
-      <v-toolbar dense>
-        <v-toolbar-title class="tekst">Register</v-toolbar-title>
-      </v-toolbar>
-      <div class="pl-4 pr-4 pt-2 pb-2">
-        <v-text-field
-          label="Email"
-          v-model = "email">
-        </v-text-field>
-        <br>
-        <v-text-field
+      <div class="error" v-html="error"/>
+      <v-btn
+        class ="cyan"
+        @click = "login">
+        Login
+      </v-btn>
+      <!-- <button class="btn btn-indigo" type="submit"  @click="login">Login</button> -->
+     </div>
+   </form>
+ <!--
+ <v-layout column>
+   <v-flex xs6 offset-xs3>
+     <div class="white elevation-2">
+       <v-toolbar dense>
+         <v-toolbar-title class="tekst">Register</v-toolbar-title>
+       </v-toolbar>
+       <div class="pl-4 pr-4 pt-2 pb-2">
+         <v-text-field
+           label="Email"
+           v-model = "email">
+         </v-text-field>
+         <br>
+         <v-text-field
 
-          label= "Password"
-          v-model = "password">
-        </v-text-field>
-        <br>
-        <div class="error" v-html="error"/>
-          <v-btn
-            class="cyan"
-            @click = "register">
-            Register
-          </v-btn>
-        </div>
-      </div>
-    </v-flex>
-  </v-layout>
-  -->
+           label= "Password"
+           v-model = "password">
+         </v-text-field>
+         <br>
+         <div class="error" v-html="error"/>
+           <v-btn
+             class="cyan"
+             @click = "register">
+             Register
+           </v-btn>
+         </div>
+       </div>
+     </v-flex>
+   </v-layout>
+   -->
 </template>
 
 <script>
