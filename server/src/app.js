@@ -18,15 +18,6 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(express.json())
 
-/*
-app.post('/register', (req, res) => {
-    res.send({
-        message: `cao ${req.body.email}! Registrovani korisnice`
-    })
-})
-
-*/
-
 require('./routes')(app)
 
 db.sequelize.sync()
@@ -34,4 +25,4 @@ db.sequelize.sync()
         app.listen(config.port)
         console.log(`Server startovao na portu ${config.port}`)
     })
-//app.listen(process.env.PORT || 8085)
+

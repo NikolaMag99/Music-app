@@ -1,5 +1,5 @@
 module.exports = {
-    port: process.env.PORT || 8085,
+    port: process.env.PORT || 8084,
     db: {
         database: process.env.DB_NAME || 'proSkript',
         user: process.env.DB_USER || 'proSkript',

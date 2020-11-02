@@ -7,6 +7,8 @@ import Vuetify from 'vuetify'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'vuetify/dist/vuetify.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import { sync } from 'vuex-router-sync'
+// import store from '@/store/store'
 
 Vue.config.productionTip = false
 
@@ -14,6 +16,7 @@ Vue.use(Vuetify)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
+// sync(store, router)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

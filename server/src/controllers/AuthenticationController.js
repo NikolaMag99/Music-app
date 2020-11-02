@@ -23,15 +23,16 @@ module.exports = {
      //     res.send(error)
      // })
         try {
-            // const user = await User.create(req.body)
-            //
-            // const userJson = user.toJSON()
-            // res.send({
-            //     user: userJson,
-            //     token: jwtSignUser(userJson)
-            // })
-            const user = await User.create(req.body)
-            res.json(user)
+            const user = await User.create(req.body);
+
+            const userJSON = user.toJSON();
+
+            const token = jwtSignUser(userJSON);
+
+            res.send({
+                user: userJSON,
+                token
+            });
         } catch (error) {
             next(error);
         }
@@ -49,7 +50,7 @@ module.exports = {
                     error: 'Los unos'
                 })
             }
-            const isPassValid = await user.comparePassword(password)
+            const isPassValid = await user.comparePassword(password, user.password)
             if (!isPassValid) {
                 return  res.status(403).send({
                     error: 'Los unos'

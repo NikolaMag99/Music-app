@@ -33,14 +33,10 @@ module.exports = {
                     res.status(400).send({
                         error: 'Ne valja'
                     })
-
-
             }
     */
         } else {
             next()
         }
-
-        next()
     }
 }
