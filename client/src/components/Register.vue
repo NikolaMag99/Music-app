@@ -51,6 +51,7 @@
 <script>
 import AuthenticationService from '../services/AuthenticationService'
 export default {
+
   name: 'root',
   data () {
     return {
@@ -62,10 +63,12 @@ export default {
   methods: {
     async register () {
       try {
-        await AuthenticationService.register({
+        const response = await AuthenticationService.register({
           email: this.email,
           password: this.password
         })
+        await this.$store.dispatch('setToken', response.data.token)
+        await this.$store.dispatch('setUser', response.data.token)
       } catch (error) {
         this.error = error.response.data.error
       }

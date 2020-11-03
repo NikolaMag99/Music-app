@@ -12,8 +12,8 @@ module.exports = {
         const {error, value} = Joi.validate(req.body, schema)
 
         if (error) {
-            res.send(error)
-            /*
+            // res.send(error)
+
             switch (error.details[0].context.key) {
                 case 'email':
                     res.status(400).send({
@@ -34,7 +34,7 @@ module.exports = {
                         error: 'Ne valja'
                     })
             }
-    */
+
         } else {
             next()
         }

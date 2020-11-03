@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7a16dbc7-a90a-409f-8171-c7d87b70d99e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Panel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Songs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/SongsService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controllers/SongsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/models/Songs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/services/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/proSkript.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/server/proSkript.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/config/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/controllers/AuthenticationController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/AuthenticationController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/validacija/AuthenticationControllerPolicy.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/validacija/AuthenticationControllerPolicy.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tab-tracker-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src/controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nikola\WebstormProjects\proSkript\server\src\controllers" />
       <recent name="C:\Users\Nikola\WebstormProjects\proSkript\client\src\components" />
     </key>
   </component>
@@ -57,12 +81,23 @@
       <option name="presentableId" value="Default" />
       <updated>1604056957915</updated>
       <workItem from="1604056959469" duration="51643000" />
-      <workItem from="1604348937192" duration="2010000" />
+      <workItem from="1604348937192" duration="16590000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="1025" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604243390609">

@@ -47,15 +47,15 @@ module.exports = {
             })
             if (!user) {
                return  res.status(403).send({
-                    error: 'Los unos'
+                    error: 'Nema korisnika'
                 })
             }
             const isPassValid = await user.comparePassword(password, user.password)
-            if (!isPassValid) {
-                return  res.status(403).send({
-                    error: 'Los unos'
-                })
-            }
+            // if (!isPassValid) {
+            //     return  res.status(403).send({
+            //         error: 'Losa sifra'
+            //     })
+            // }
             const userJson = user.toJSON()
             res.send({
                 user: userJson,

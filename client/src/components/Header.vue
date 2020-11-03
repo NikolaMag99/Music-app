@@ -2,7 +2,7 @@
   <div class="pozicija">
     <b-navbar toggleable="lg" type="dark" variant="info" fixed>
       <b-navbar-brand href="#"  @click="navigateTo({name: 'root'})">Songs</b-navbar-brand>
-
+      <v-btn text  @click="navigateTo({name: 'songs'})">Browse</v-btn>
       <b-collapse id="nav-collapse" is-nav>
 
         <!-- Right aligned nav items -->
@@ -10,23 +10,31 @@
           <b-nav-form>
             <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+            <v-btn text @click="navigateTo({name: 'songs'})">Browse</v-btn>
           </b-nav-form>
 
           <b-nav-item right>
             <!-- Using 'button-content' slot -->
             <router-link to="login">
               <v-btn
-                >
+                v-if = "!$store.state.isUserLoggedIn">
                 Login
               </v-btn>
             </router-link>
             <router-link to="register">
               <v-btn
-                @click="navigateTo({name: 'root'})">
+               v-if = "!$store.state.isUserLoggedIn">
                 Sing up
               </v-btn>
             </router-link>
+
+              <v-btn
+                @click="logout" v-if = "$store.state.isUserLoggedIn">
+                Log Out
+              </v-btn>
+
           </b-nav-item>
+
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -65,6 +73,13 @@ export default {
   methods: {
     navigateTo (route) {
       this.$router.push(route)
+    },
+    logout () {
+      this.$store.dispatch('setToken', null)
+      this.$store.dispatch('setUser', null)
+      this.$router.push({
+        name: 'root'
+      })
     }
   }
 }
