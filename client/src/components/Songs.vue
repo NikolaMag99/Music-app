@@ -7,10 +7,10 @@
             <b-icon class="nota" icon="plus" font-scale="3.5"></b-icon>
           </router-link>
 
-        <b-card-group columns>
+        <b-card columns>
           <div v-for="song in songs" :key="song.id">
             <v-layout>
-              <v-flex xs6>
+              <v-flex xs3>
                 <div class="song-title">
                   {{song.title}}
                 </div>
@@ -31,28 +31,15 @@
                   })">
                   View
                 </b-button>
-<!--                <v-btn-->
-<!--                  class ="cyan"-->
-<!--                  @click = "navigateTo({-->
-<!--                  name: 'song',-->
-<!--                  params: {-->
-<!--                    songId: song.id-->
-<!--                   }-->
-<!--                  })">-->
-<!--                  View-->
-<!--                </v-btn>-->
               </v-flex>
 
-              <v-flex xs6>
+              <v-flex xs3>
                 <img class="album-image" :src="song.albumImageUrl" />
-
               </v-flex>
+              <br> <br>  <br> <br>
             </v-layout>
-<!--            {{song.title}} - -->
-<!--            {{song.artist}} - -->
-<!--            {{song.album}}-->
           </div>
-        </b-card-group>
+        </b-card>
       </b-card>
     </v-flex>
   </v-layout>
@@ -91,12 +78,15 @@ export default {
   margin-right: 10px;
 }
 .song-ganre {
+color: black;
 font-size: 16px;
 }
 .song-title {
+  color: black;
   font-size: 24px;
 }
 .song-artist {
+  color: black;
   font-size: 20px;
 }
 .nota1 {

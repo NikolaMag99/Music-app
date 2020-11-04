@@ -41,11 +41,11 @@
             </div>
           </b-card>
         <br>
-        <v-btn
+        <b-button
           class ="dugme"
           @click = "create">
           Create song
-        </v-btn>
+        </b-button >
       </form>
     </b-card-group>
   </div>
@@ -88,12 +88,16 @@ export default {
 </script>
 
 <style scoped>
+.boks {
+  margin-left: 200px;
+}
 .boks2 {
   margin-left: 300px;
+  /*margin-right: 300px;*/
 }
 
 .dugme {
   margin-top: 100px;
-  margin-left: 400px;
+  margin-left: 620px;
 }
 </style>
