@@ -9,11 +9,11 @@
     <input type="password" id="defaultFormLoginPasswordEx" class="form-control" v-model = "password"/>
     <div class="text-center mt-4" >
       <div class="error" v-html="error"/>
-      <v-btn
-        class ="cyan"
+      <b-button
+        class ="registar"
         @click = "register">
         Registar
-      </v-btn>
+      </b-button>
     </div>
   </form>
 <!--
@@ -78,6 +78,10 @@ export default {
 </script>
 
 <style scoped>
+.registar {
+  margin-top: 10px;
+  margin-left: 5px;
+}
 .tekst {
   padding-left: 1150px;
   text-align: center;

@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a16dbc7-a90a-409f-8171-c7d87b70d99e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/EditSong.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CreateSong.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CreateSong.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Songs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Songs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ViewSong.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ViewSong.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/SongsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/SongsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/proSkript.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/server/proSkript.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/SongsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/SongsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,8 +64,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nikola\WebstormProjects\proSkript\server\src\controllers" />
       <recent name="C:\Users\Nikola\WebstormProjects\proSkript\client\src\components" />
+      <recent name="C:\Users\Nikola\WebstormProjects\proSkript\server\src\controllers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,7 +78,7 @@
       <updated>1604056957915</updated>
       <workItem from="1604056959469" duration="51643000" />
       <workItem from="1604348937192" duration="31737000" />
-      <workItem from="1604524672745" duration="1609000" />
+      <workItem from="1604524672745" duration="13241000" />
     </task>
     <servers />
   </component>

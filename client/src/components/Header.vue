@@ -2,7 +2,7 @@
   <div class="pozicija">
     <b-navbar toggleable="lg" type="dark" variant="info" fixed>
       <b-navbar-brand href="#"  @click="navigateTo({name: 'songs'})">Songs</b-navbar-brand>
-      <b-button text  @click="navigateTo({name: 'songs-create'})">Browse</b-button>
+      <b-button text  @click="navigateTo({name: 'songs-create'})">Add Song</b-button>
       <b-collapse id="nav-collapse" is-nav>
 
         <!-- Right aligned nav items -->

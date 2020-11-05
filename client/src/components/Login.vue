@@ -9,11 +9,11 @@
     <input type="password" id="defaultFormLoginPasswordEx" class="form-control" v-model = "password"/>
     <div class="text-center mt-4">
       <div class="error" v-html="error"/>
-      <v-btn
-        class ="cyan"
+      <b-button
+        class ="log"
         @click = "login">
         Login
-      </v-btn>
+      </b-button>
       <!-- <button class="btn btn-indigo" type="submit"  @click="login">Login</button> -->
      </div>
    </form>
@@ -48,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+.log {
+  margin-top: 10px;
+  margin-left: 5px;
+}
 .tekst {
   padding-left: 1150px;
   text-align: center;

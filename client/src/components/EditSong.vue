@@ -43,8 +43,8 @@
         <br>
         <b-button
           class ="dugme"
-          @click = "create">
-          Add New Song
+          @click = "save">
+          Save Song
         </b-button >
       </form>
     </b-card-group>
@@ -70,15 +70,36 @@ export default {
     }
   },
   methods: {
-    async create () {
+    async save () {
+      const songId = this.$store.state.route.params.songId
+      this.error = null
+      const areAllFieldsFilledIn = Object
+        .keys(this.song)
+        .every(key => !!this.song[key])
+      if (!areAllFieldsFilledIn) {
+        this.error = 'Please fill in all the required fields!'
+        return
+      }
       try {
-        await SongsService.post(this.song)
+        await SongsService.put(this.song)
         this.$router.push({
-          name: 'songs'
+          name: 'song',
+          params: {
+            songId: songId
+          }
         })
       } catch (error) {
         console.log(error)
       }
+    }
+  },
+  async mounted () {
+    try {
+      const songId = this.$store.state.route.params.songId
+      this.song = (await SongsService.show(songId)).data
+      await SongsService.show(this.song)
+    } catch (error) {
+      console.log(error)
     }
   },
   components: {
