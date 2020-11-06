@@ -34,7 +34,9 @@ module.exports = {
                 token
             });
         } catch (error) {
-            next(error);
+            return  res.status(403).send({
+                error: 'Zauzet korisnik'
+            })
         }
     },
     async login (req, res) {

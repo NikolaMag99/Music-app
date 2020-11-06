@@ -30,13 +30,15 @@
               <b-form-textarea
                 id="textarea"
                 v-model="song.tab"
-                rows="3">
-              </b-form-textarea>
+                rows="3"
+                class="teksPolje">
+              </b-form-textarea >
                 <label for="defaultFormLoginEmailEx" class="grey-text">Lyrics</label>
               <b-form-textarea
                 id="textarea"
                 v-model="song.lyrics"
-                rows="3">
+                rows="3"
+                class="teksPolje">
               </b-form-textarea>
             </div>
           </b-card>
@@ -88,16 +90,20 @@ export default {
 </script>
 
 <style scoped>
+.teksPolje {
+  height: 250px;
+}
 .boks {
   margin-left: 200px;
 }
 .boks2 {
   margin-left: 300px;
+  height: 630px;
   /*margin-right: 300px;*/
 }
 
 .dugme {
-  margin-top: 100px;
-  margin-left: 620px;
+  margin-top: 700px;
+  margin-left: -1100px;
 }
 </style>
