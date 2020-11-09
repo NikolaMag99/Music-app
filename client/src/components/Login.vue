@@ -3,24 +3,25 @@
   <form>
     <p class="h4 text-center mb-4">Login</p>
     <label for="defaultFormLoginEmailEx" class="grey-text">Your email</label>
-    <input type="email" id="defaultFormLoginEmailEx" class="form-control" v-model = "email"/>
+    <input type="email" id="defaultFormLoginEmailEx" class="form-control" v-model="email"/>
     <br/>
     <label for="defaultFormLoginPasswordEx" class="grey-text">Your password</label>
-    <input type="password" id="defaultFormLoginPasswordEx" class="form-control" v-model = "password"/>
+    <input type="password" id="defaultFormLoginPasswordEx" class="form-control" v-model="password"/>
     <div class="text-center mt-4">
       <div class="error" v-html="error"/>
       <b-button
-        class ="log"
-        @click = "login">
+        class="log"
+        @click="login">
         Login
       </b-button>
       <!-- <button class="btn btn-indigo" type="submit"  @click="login">Login</button> -->
-     </div>
-   </form>
+    </div>
+  </form>
 </template>
 
 <script>
 import AuthenticationService from '../services/AuthenticationService'
+
 export default {
   name: 'root',
   data () {
@@ -55,15 +56,18 @@ export default {
   margin-top: 10px;
   margin-left: 5px;
 }
+
 .tekst {
   padding-left: 1150px;
   text-align: center;
 }
+
 .cyan {
   text-align: center;
- margin-top: 20px;
- margin-right: 85px;
+  margin-top: 20px;
+  margin-right: 85px;
 }
+
 .error {
   color: red;
 }

@@ -11,8 +11,6 @@ const sequelize = new Sequelize(
     config.db.options
 )
 
-//const neka = sequelize()
-
 fs
     .readdirSync(__dirname) //citam trenutni direktorijum i daje mi fajlove
     .filter((file) =>

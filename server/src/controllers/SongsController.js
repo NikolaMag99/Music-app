@@ -1,7 +1,7 @@
 const {Song} = require('../models')
 
 module.exports = {
-    async index (req, res) {
+    async index(req, res) {
         try {
             let songs = null
             const search = req.query.search
@@ -11,7 +11,7 @@ module.exports = {
                         $or: [
                             'title', 'artist', 'genre', 'album'
                         ].map(key => ({
-                            [key]:{
+                            [key]: {
                                 $like: `%${search}%`
                             }
                         }))
@@ -23,27 +23,25 @@ module.exports = {
                 })
             }
             res.send(songs)
-        }
-        catch (err) {
+        } catch (err) {
             res.status(500).send({
                 error: 'Ne moze da pronadje pesmu'
             })
         }
     },
-    async show (req, res) {
+    async show(req, res) {
         try {
             const song = await Song.findByPk(req.params.songId)
             res.send(song)
-        }
-        catch (err) {
+        } catch (err) {
             res.status(500).send({
                 error: 'Ne moze da pronadje pesmu'
             })
         }
     },
-    async post (req, res) {
+    async post(req, res) {
         try {
-           // console.log("Usao")
+            // console.log("Usao")
             const song = await Song.create(req.body)
             res.send(song)
         } catch (err) {
@@ -52,7 +50,7 @@ module.exports = {
             })
         }
     },
-    async put (req, res) {
+    async put(req, res) {
         try {
             // console.log("Usao")
             const song = await Song.update(req.body, {
