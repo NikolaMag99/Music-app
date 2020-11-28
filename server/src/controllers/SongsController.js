@@ -32,6 +32,7 @@ module.exports = {
     async show(req, res) {
         try {
             const song = await Song.findByPk(req.params.songId)
+            // const deleteSong = song.destroy
             res.send(song)
         } catch (err) {
             res.status(500).send({
@@ -39,6 +40,7 @@ module.exports = {
             })
         }
     },
+
     async post(req, res) {
         try {
             // console.log("Usao")
@@ -63,6 +65,22 @@ module.exports = {
         } catch (err) {
             res.status(500).send({
                 error: 'Ne moze da uradi update'
+            })
+        }
+    },
+    async delete(req, res) {
+        try {
+            // console.log("Usao")
+            const song = await Song.findByPk(req.params.songId)
+            await Song.destroy({
+                where: {
+                    id: req.params.songId
+                }
+            })
+            res.send(song)
+        } catch (err) {
+            res.status(500).send({
+                error: 'Ne moze da uradi delete'
             })
         }
     }

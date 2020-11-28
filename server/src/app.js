@@ -4,6 +4,9 @@ const cors = require('cors')
 const morgan = require('morgan')
 const db = require('./models/index.js')
 const config = require('./config/config')
+const history = require('connect-history-api-fallback')
+const path = require('path')
+
 
 const app = express()
 app.use(function(req, res, next) {
@@ -19,6 +22,12 @@ app.use(cors())
 app.use(express.json())
 
 require('./routes')(app)
+
+const staticDir = express.static(path.join(__dirname, 'dist'))
+
+app.use(staticDir)
+app.use(history)
+app.use(staticDir)
 
 db.sequelize.sync()
     .then(() => {

@@ -43,6 +43,7 @@
           </div>
         </b-card>
         <br>
+        <div class="error" v-html="error"/>
         <b-button
           class="dugme"
           @click="create">
@@ -73,14 +74,24 @@ export default {
     }
   },
   methods: {
+
     async create () {
+      this.error = 'Please fill in all the required fields!'
+      const areAllFieldsFilledIn = Object
+        .keys(this.song)
+        .every(key => !!this.song[key])
+      if (!areAllFieldsFilledIn) {
+        this.error = 'Please fill in all the required fields!'
+        // console.log('Please fill in all the required fields!')
+        return
+      }
       try {
         await SongsService.post(this.song)
         this.$router.push({
           name: 'songs'
         })
       } catch (error) {
-        console.log(error)
+        this.error = error.response.data.error
       }
     }
   },

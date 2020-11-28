@@ -31,6 +31,11 @@
                   })">
                   View
                 </b-button>
+                <b-button
+                  class ="dugme"
+                  @click = "deleteSong(song.id)">
+                  Delete
+                </b-button>
               </v-flex>
 
               <v-flex xs3>
@@ -62,6 +67,18 @@ export default {
   methods: {
     navigateTo (route) {
       this.$router.push(route)
+    }
+  },
+  async deleteSong (songId) {
+    this.error = null
+    try {
+      const nesto = await SongsService.delete(songId)
+      console.log(nesto)
+      for (let i = 0; i < this.songs.length; i++) {
+        this.songs.splice(i, 1)
+      }
+    } catch (error) {
+      console.log(error)
     }
   },
   watch: {

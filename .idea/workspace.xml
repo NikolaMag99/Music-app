@@ -20,12 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a16dbc7-a90a-409f-8171-c7d87b70d99e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/css/app.92231fe08d41506dc54262fade7d473d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/css/app.92231fe08d41506dc54262fade7d473d.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/js/app.1d9024e834f9a2de4a8b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/js/app.1d9024e834f9a2de4a8b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/js/vendor.7fd0f57a76c246efa085.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dist/static/js/vendor.7fd0f57a76c246efa085.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CreateSong.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CreateSong.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Songs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Songs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/SongsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/SongsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/proSkript.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/server/proSkript.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/controllers/SongsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/SongsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,7 +89,11 @@
       <workItem from="1604348937192" duration="31737000" />
       <workItem from="1604524672745" duration="25547000" />
       <workItem from="1604839289790" duration="703000" />
-      <workItem from="1604933590222" duration="1411000" />
+      <workItem from="1604933590222" duration="1593000" />
+      <workItem from="1605042100746" duration="66000" />
+      <workItem from="1605185469992" duration="76000" />
+      <workItem from="1605380804681" duration="7385000" />
+      <workItem from="1606575669913" duration="1771000" />
     </task>
     <servers />
   </component>
@@ -106,5 +125,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="331" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1440@0.0.2560.1400" timestamp="1604343334461" />
+    <state x="936" y="325" key="run.anything.popup" timestamp="1605484215632">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="325" key="run.anything.popup/0.0.2560.1400/-2560.0.2560.1440@0.0.2560.1400" timestamp="1605484215632" />
   </component>
 </project>

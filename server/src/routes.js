@@ -20,4 +20,7 @@ module.exports = (app) => {
 
     app.put('/songs/:songId',
         SongsController.put)
+
+    app.delete('/songs/:songId',
+        SongsController.delete)
 }
